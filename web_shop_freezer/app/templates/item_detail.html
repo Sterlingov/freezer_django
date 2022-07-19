@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>V-freezers</title>
+  </head>
+  <body>
+    <h2><input type="button" onclick="history.back();" value="Назад"/></h2>
+    <h1><p>{{items.title}}</p></h1>
+    <img src={{items.image}}>
+    <h2>Характеристики</h2>
+    <p>Оперативная память: {{items.char_ozu}} Кб</p>
+    <p>Вес: {{items.char_weight}} Кг</p>
+    <p>Минимальная температура: {{items.char_freeze}} C°</p>
+    <h2>Описание</h2>
+    <p>{{items.text|linebreaksbr}}</p>
+  </body>
+</html>

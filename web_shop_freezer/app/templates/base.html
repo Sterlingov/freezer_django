@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="ru" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>V-freezers</title>
+  </head>
+  <body>
+    <h2><input type="button" onclick="document.location='/admin'" value="Admin"/></h2>
+    {% for i in freezers_model %}
+      <h1><a href="{% url 'item_detail' pk=i.pk %}"> {{ i.title }}</a></h1>
+      <p></p>
+      <img src={{i.image}}>
+      <p>Стоимость: {{i.price}}₽</p>
+    {% endfor %}
+  </body>
+</html>
