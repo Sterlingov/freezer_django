@@ -6,6 +6,8 @@
   </head>
   <body>
     <h2><input type="button" onclick="document.location='/admin'" value="Admin"/></h2>
+    <h3><input type="button" onclick="document.location='/price_up'" value="Сортировать по цене от низк. к выс."/></h3>
+    <h3><input type="button" onclick="document.location='/'" value="Сортировать по цене от выс. к низк."/></h3>
     {% for i in freezers_model %}
       <h1><a href="{% url 'item_detail' pk=i.pk %}"> {{ i.title }}</a></h1>
       <p></p>
